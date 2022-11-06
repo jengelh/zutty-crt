@@ -88,7 +88,7 @@ namespace zutty
       {"altSendsEscape",    "true",        "Encode Alt key as ESC prefix"},
       {"bellIsAudible",     "true",        "Invoke audible bell (XBell) on ^G"},
       {"bellIsUrgent",      "false",       "Signal bell to WM as Urgency Hint"},
-      {"modifyOtherKeys",   "1",           "Key modifier encoding level; 0..2"},
+      {"modifyOtherKeys",   "0",           "Key modifier encoding level; 0..2"},
       {"color0",            "#000000",     "Palette color 0"},
       {"color1",            "#aa0000",     "Palette color 1"},
       {"color2",            "#00aa00",     "Palette color 2"},
