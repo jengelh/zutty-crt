@@ -19,7 +19,13 @@ uniform highp vec2 viewPixels;
 
 layout (location = 0) out lowp vec4 outColor;
 
+precision mediump float;
+float fmin = 0.5;
+
 void main ()
 {
-   outColor = imageLoad (imgOut, ivec2 (texCoord * viewPixels));
+	float fmod = mod(gl_FragCoord.y, 2.0);
+	float fstep = fmin + (1.0 - fmin) * fmod;
+	vec4 il = imageLoad (imgOut, ivec2 (texCoord * viewPixels));
+	outColor = vec4(il.x, il.y, il.z, il.w * fstep);
 }
