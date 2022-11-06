@@ -109,9 +109,6 @@ namespace zutty
            << face->num_glyphs << " total)"
            << std::endl;
 
-      if (face->num_fixed_sizes > 0)
-         loadFixed (face);
-      else
          loadScaled (face);
 
       /* Given that we have num_glyphs glyphs to load, with each
