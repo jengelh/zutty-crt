@@ -8,7 +8,9 @@
  *
  * See the file LICENSE for the full license.
  */
-
+#ifdef HAVE_CONFIG_H
+#	include "config.h"
+#endif
 #include "options.h"
 
 #include <X11/Xlib.h>
